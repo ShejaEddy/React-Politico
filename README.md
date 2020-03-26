@@ -1,2 +1,2 @@
 # React-Politico
-Politico Web Application enables citizens to give their mandate to politicians running for different government offices while building trust in the process through transparency
+Politico Web Application enables citizens to give their mandate to politicians running for different government offices while building trust in the process through transparency.
