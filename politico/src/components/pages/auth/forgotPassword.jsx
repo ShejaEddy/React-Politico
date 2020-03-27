@@ -17,7 +17,7 @@ class ForgotPassword extends Component {
             Ouch! I forgot My password
           </p>
           <input
-            className="username input"
+            className="username input my-4"
             id="email"
             type="email"
             align="center"
@@ -27,7 +27,7 @@ class ForgotPassword extends Component {
           <button className="submit" align="center">
             Send me a reset link
           </button>
-          <p className="forgot font-14" align="center">
+          <p className="forgot font-14 p-4" align="center">
             Don't mind, I remember <Link to="login">Login</Link>
           </p>
         </form>
