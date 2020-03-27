@@ -11,7 +11,7 @@ const Navbar = () => {
     </li>
   );
   const signUp = (
-    <li key="signup">
+    <li key="signUp">
       <Link to="/signup">
         <i className="fas fa-user-plus"></i>Register
       </Link>
