@@ -125,7 +125,7 @@ nav a {
   color: black;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .content {
   display: flex;
