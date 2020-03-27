@@ -11,6 +11,7 @@ body {
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: white;
 }
 
 .font-14 {
@@ -64,7 +65,7 @@ nav {
   box-sizing: border-box;
 }
 
-.logo {
+nav .logo {
   background-image: url(../img/logo2.png);
   background-size: cover;
   height: 41px;
@@ -73,7 +74,9 @@ nav {
   cursor: pointer;
   display: inline-block;
 }
-
+li {
+  list-style: none;
+}
 .nav-option {
   display: inline;
   margin-right: 10px;
@@ -111,7 +114,6 @@ select {
 
 nav {
   width: 100%;
-  /* background: #ececec; */
   position: sticky;
   top: 0;
   z-index: 100;
@@ -122,10 +124,9 @@ nav {
 nav a {
   color: black;
 }
-nav a:hover {
+a:hover {
   text-decoration: none;
 }
-
 .content {
   display: flex;
   position: relative;
@@ -344,7 +345,11 @@ nav a:hover {
   font-size: 1.4em;
   color: grey;
 }
-
+.footer li,
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
 @media screen and (max-width: 800px) {
   .sidebar {
     margin-left: -239px;

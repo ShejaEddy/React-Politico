@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../assets/css/index.css';
+import '../../assets/sass/index.scss';
 
 function Index() {
   return (
-    <div className="landing-page content">
+    <div className="landing-page">
       <div className="intro-container">
         <p className="intro-text">Welcome to Politico platform,</p>
         <p className="body-text">
