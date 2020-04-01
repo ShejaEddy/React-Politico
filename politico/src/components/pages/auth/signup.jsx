@@ -11,18 +11,49 @@ class SignUp extends Component {
           <p className="signup-title font-20" align="center">
             Register your account
           </p>
-          <input className="input" type="text" placeholder="First name" />
-          <input className="input" type="text" placeholder="Middle name" />
-          <input className="input" type="text" placeholder="Last name" />
-          <input className="input" type="text" placeholder="Email" />
-          <input className="input" type="number" placeholder="Phone number" />
-          <input className="input" type="password" placeholder="Password" />
+          <input
+            className="input"
+            type="text"
+            placeholder="First name"
+            required
+          />
+          <input
+            className="input"
+            type="text"
+            placeholder="Middle name"
+            required
+          />
+          <input
+            className="input"
+            type="text"
+            placeholder="Last name"
+            required
+          />
+          <input className="input" type="text" placeholder="Email" required />
+          <input
+            className="input"
+            type="number"
+            placeholder="Phone number"
+            required
+          />
+          <input
+            className="input"
+            type="password"
+            placeholder="Password"
+            required
+          />
           <input
             className="input"
             type="password"
             placeholder="Confirm Password"
+            required
           />
-          <input className="input" type="text" placeholder="National Id" />
+          <input
+            className="input"
+            type="text"
+            placeholder="National Id"
+            required
+          />
           <button className="submit" align="center">
             Sign up
           </button>
