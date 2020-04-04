@@ -25,10 +25,12 @@ class Parties extends Component {
     filteredParties: [],
     party: {},
   };
+
   componentDidMount() {
     const isLogged = store.getState().isLogged;
     return isLogged ? this.init() : this.props.history.push("/login");
   }
+
   render() {
     return (
       <React.Fragment>
@@ -102,6 +104,7 @@ class Parties extends Component {
     this.setDOM(filteredParties);
     this.setState({ filteredParties });
   }
+
   setDOM = (data) => {
     let html = "";
     for (let i = 0; i < data.length; i++) {
@@ -137,6 +140,7 @@ class Parties extends Component {
         this.openModal("update-modal");
       });
     });
+
     this.elAll(".delete").forEach((row) => {
       row.addEventListener("click", (e) => {
         const id = e.target.getAttribute("id").replace("delete-", "");
@@ -146,12 +150,15 @@ class Parties extends Component {
       });
     });
   };
+
   closeModal = (modal) => {
     this.el(`.${modal}`).classList.add("d-none");
   };
+
   openModal = (modal) => {
     this.el(`.${modal}`).classList.remove("d-none");
   };
+  
   searchHandler = (e) => {
     const value = e.target.value.toLowerCase();
     const setSearch = (item) => item.toLowerCase().includes(value);
