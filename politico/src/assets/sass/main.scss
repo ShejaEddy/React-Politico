@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
@@ -9,8 +9,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: white;
 }
 
@@ -103,7 +103,7 @@ input,
 button,
 select {
   font-size: 14px;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -121,12 +121,18 @@ nav {
   -moz-box-shadow: 0 3px 6px -6px #777;
   box-shadow: 0 3px 6px -6px #777;
 }
+
 nav a {
   color: black;
 }
-a:hover {
+
+a:hover,
+li:hover {
   text-decoration: none !important;
+  opacity: 0.7;
+  cursor: pointer;
 }
+
 .content {
   display: flex;
   position: relative;
@@ -175,7 +181,7 @@ a:hover {
 .user-profile .profile {
   width: 50px;
   height: 50px;
-  background-image: url('../img/avatar_user.png');
+  background-image: url("../img/avatar_user.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
@@ -197,7 +203,6 @@ a:hover {
 
 .sidebar li {
   list-style: none;
-  padding: 0.75rem 1rem;
   cursor: pointer;
   text-transform: capitalize;
   color: #a2a2a2;
@@ -236,8 +241,15 @@ a:hover {
 .sidebar li:hover {
   background-color: rgb(247, 246, 246);
 }
+.sidebar li a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
 
-.sidebar li:hover .fa-plus {
+.sidebar li:hover .fa-plus,
+.active-link .fa-plus {
   background-color: #00afec;
   color: white;
 }
@@ -281,6 +293,18 @@ a:hover {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.create-btn {
+  float: right;
+  background: #00afec;
+  height: 30px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 0px 3px 8px lightgrey;
+  margin-left: auto;
 }
 
 @-webkit-keyframes fadein {

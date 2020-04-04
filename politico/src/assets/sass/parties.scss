@@ -1,0 +1,130 @@
+#parties {
+  .container {
+    background: white;
+    box-shadow: 0px 3px 5px lightgrey;
+    padding: 1.2em 2.2em;
+  }
+  .main-title {
+    padding: 0 2em 0.3em;
+    color: #808c90;
+    text-align: left;
+  }
+
+  .new-form {
+    padding: 1em;
+    background: white;
+    box-shadow: 0px 2px 5px lightgrey;
+  }
+
+  .new-form form {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+  }
+
+  .new-form form input {
+    font-size: 12px;
+    height: 25px;
+    padding-left: 10px;
+    border: 1px solid lightgrey;
+    width: 20%;
+    margin-right: 10px;
+  }
+
+  .new-form form select {
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid lightgrey;
+    width: 20%;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .new-form form label {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .new-form #upload {
+    background: #04942a;
+    border: 0;
+    height: 30px;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .search-container {
+    margin: 1em 1em 1em 0;
+  }
+
+  .search-container input {
+    width: 30%;
+    height: 30px;
+    border: 1px solid lightgray;
+    padding-left: 30px;
+    font-size: 13px;
+  }
+
+  .fas:hover {
+    color: lightblue;
+  }
+
+  .options {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  .list {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    padding: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+  }
+
+  .list i {
+    margin-left: 5px;
+    color: grey;
+  }
+
+  .user-data {
+    display: flex;
+  }
+
+  .list p {
+    margin: 0;
+  }
+
+  .list:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .list .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .list .details .name {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #064f69;
+  }
+
+  .profile {
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .bio {
+    color: gray;
+    font-size: 14px;
+  }
+}
