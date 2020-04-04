@@ -50,8 +50,25 @@ body {
   justify-content: space-between;
 }
 
-.d-none {
-  display: none;
+.update-modal,
+.delete-modal {
+  position: fixed;
+  overflow: auto;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.2784313725490196);
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+button:disabled {
+  cursor: no-drop !important;
 }
 
 nav {
@@ -116,7 +133,7 @@ nav {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 10;
   -webkit-box-shadow: 0 3px 6px -6px #777;
   -moz-box-shadow: 0 3px 6px -6px #777;
   box-shadow: 0 3px 6px -6px #777;
@@ -293,6 +310,14 @@ li:hover {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.modal-header h4 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 0;
+  font-size: 1.2em;
 }
 
 .create-btn {
